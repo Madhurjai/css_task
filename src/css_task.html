@@ -80,6 +80,13 @@
       .important {
         color: salmon !important;
       }
+      .variable{
+        --text-color : blue;
+        --back-color : red ;
+        background-color: var(--back-color);
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+      }
     </style>
   </head>
   <body>
@@ -132,5 +139,6 @@
     <p style="color: #0FF;">Use Abbreviated Hex Code</p>
     <p style="color: rgb(158, 49, 49);">Use RGB values to Color Elements</p>
     <p style="color: rgb(238,135,238);">Use RGB to Mix Colors</p>
+    <p class="variable">Use CSS Variables to change several elements at once</p>
   </body>
 </html>

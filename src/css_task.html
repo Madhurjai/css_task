@@ -80,12 +80,15 @@
       .important {
         color: salmon !important;
       }
+      :root{
+        --red-color : rgb(51, 149, 51) ;
+      }
       .variable{
         --text-color : blue;
         --back-color : red ;
         background-color: var(--back-color);
         color: var(--text-color);
-        border: 2px solid var(--text-color);
+        border: 2px solid var(--red-color);
       }
       .variable1{
         background-color: var(--back-color , black);
@@ -147,5 +150,6 @@
     <p class="variable">Create a custom CSS Variable</p>
     <p class="variable">Use a custom CSS Variable</p>
     <p class="variable1">Attach a Fallback value to a CSS Variable</p>
+    <p class="variable1">Improve Compatibility with Browser Fallbacks</p>
   </body>
 </html>

@@ -45,15 +45,15 @@
         margin-bottom: 20px;
         margin-left: 20px;
       }
-      .clockwise_padd{
+      .clockwise_padd {
         border: 2px solid purple;
-        padding : 10px 20px 10px 30px ; 
+        padding: 10px 20px 10px 30px;
       }
-      .clockwise_margin{
+      .clockwise_margin {
         border: 3px solid violet;
         margin: 15px 20px 15px 40px;
       }
-      [type = "button"]{
+      [type='button'] {
         display: block;
         width: 150px;
         margin: auto;
@@ -70,6 +70,30 @@
     <div class="diff_margin">add different margin in different side</div>
     <div class="clockwise_padd">add clockwise padding to the element</div>
     <div class="clockwise_margin">add clockwise margin to the element</div>
-    <input type="button" value="click me">
+    <input type="button" value="click me" />
+
+    <div
+      style="
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        top: 20px;
+      "
+    >
+      position = relative
+    </div>
+    <div
+      style="
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        top: 720px;
+        left: 300px;
+      "
+    >
+      position = absolute
+    </div>
   </body>
 </html>
